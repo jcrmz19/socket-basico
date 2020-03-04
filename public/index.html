@@ -32,6 +32,11 @@
             mensaje: 'Hola Mundo!'
         });
 
+        // Escuchar información
+        socket.on('enviarMensaje', function(mensaje){
+            console.log('Servidor: ', mensaje);
+        });
+
     </script>
 </body>
 
